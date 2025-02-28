@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github</title>
+    <link rel="stylesheet" href="Index.css">
 </head>
 <body>
 
@@ -12,8 +13,26 @@
 
 <div id="jsonManier">
 </div>
-
+<div>
+    Achternaam : <input type="text" id="anaam" onblur="check()" onkeyup="test()">
+</div>
 <script>
+function test() {
+    if (document.getElementById("anaam").value.length <= 3)
+    {
+
+    }
+}
+
+function check() {
+    if (document.getElementById("anaam").value.length <= 3)
+    {
+        document.getElementById("anaam").style.backgroundColor="red";
+    }
+    else
+    document.getElementById("anaam").style.backgroundColor="lightgreen";
+}
+
 // STANDAARD ARRAY
 let studentenA = [
 ["Fokke","","Gnodde"],
